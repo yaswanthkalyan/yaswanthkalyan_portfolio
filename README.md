@@ -32,7 +32,7 @@ This repository contains the source code for my personal portfolio website. The 
 3. Open `index.html` in a browser to view the site.
 
 ## Live Demo
-You can view the live version of the website [here](https://yaswanthkalyan.github.io/).
+You can view the live version of the website [here](https://yaswanthkalyan.github.io/yaswanthkalyan_portfolio/).
 
 ## Folder Structure
 ```
@@ -54,6 +54,4 @@ For any inquiries, feel free to connect with me:
 This project is open-source and available under the [MIT License](LICENSE). Feel free to use and modify it for your own portfolio.
 
 ---
-
-Link: https://yaswanthkalyan.github.io/yaswanthkalyan_portfolio/
 

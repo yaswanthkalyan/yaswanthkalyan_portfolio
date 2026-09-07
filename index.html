@@ -1,656 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Yaswanth Kalyan Ponugoti Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090d">
+  <meta name="description" content="Yaswanth Kalyan Ponugoti (Yash) — AI and Data Science professional building practical machine learning, analytics, NLP, GenAI, and computer vision systems.">
+  <title>Yaswanth Kalyan (Yash) — AI / Data Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/yk-logo.png">
+  <link rel="stylesheet" href="css/liquid-ui.css">
+</head>
+<body class="liquid-site">
+  <div class="site-atmosphere" aria-hidden="true">
+    <canvas id="neural-canvas"></canvas>
+    <div class="atmosphere-noise"></div>
+    <div class="cursor-light"></div>
+  </div>
+  <div class="scroll-meter" aria-hidden="true"><span></span></div>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <header class="nav-shell" id="top">
+    <a class="brand-mark" href="#home" aria-label="Yaswanth Kalyan (Yash) home">
+      <span class="brand-symbol"><img src="images/yk-logo.png" alt="Yaswanth Kalyan (Yash) logo"></span>
+      <span class="brand-copy"><strong>Yaswanth Kalyan <em>(Yash)</em></strong><small>AI / DATA SCIENCE</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-link is-active" href="#home"><span>01</span> Home</a>
+      <a class="nav-link" href="#experience"><span>02</span> Experience</a>
+      <a class="nav-link" href="#work"><span>03</span> Selected work</a>
+      <a class="nav-link" href="#contact"><span>04</span> Contact</a>
+    </nav>
+    <div class="nav-status"><i></i><span>AVAILABLE FOR IMPACT</span></div>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
 
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Yaswanth Kalyan Ponugoti</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/pic32.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Yaswanth Kalyan (Yash)</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						
-						'AI ML Engineer ',
-						'Developer ',
-						'Data Science Enthusiast  ',
-						
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Machine Learning Engineer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://github.com/yaswanthkalyan" class="btn btn-primary py-3 px-4">My works</a> 
-							</p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-yash.jpg" class="img-fluid rounded b-shadow-a" alt="" style="clip-path: circle();">
-
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Yaswanth Kalyan</span></p>
-										<p><span class="title-s">Job Role: </span> <span>AI ML Engineer</span></p>
-										<p><span class="title-s">Experience: </span> <span>5 years 6 months</span></p>
-										<p><span class="title-s">Address: </span> <span>United States</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Python</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>SQL</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Deep Learning | NLP | Compter Vision</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I'm Yaswanth Kalyan Ponugoti, a Computational Data Science graduate student at Purdue University. I love diving into machine learning, NLP, and computer vision. My background includes a B.Tech in Computer Science, and I've had the chance to work at companies like Schlumberger, where I developed AI solutions and saved costs. I enjoy using tools like Python, Java, SQL, and TensorFlow to solve complex problems and drive innovation.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science, Machine Learning, NLP, Gen AI &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Analytics, Software, Oil &amp; Gas</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Master of Science &amp; Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Telugu, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; </span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Anime, Sports</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="20">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/yaswanth-kalyan-ponugoti-60439216a/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-			<p>Aspiring Data Scientist with a strong foundation in machine learning, NLP, and computer vision. Experienced in developing AI solutions and achieving cost savings, passionate about solving complex problems and driving innovation in tech.</p>
-
-		</div>
+  <main>
+    <section class="hero-section section-frame" id="home">
+      <div class="hero-orbit-mark" aria-hidden="true"><span>DATA</span><span>MODEL</span><span>IMPACT</span></div>
+      <div class="hero-content">
+        <div class="section-index"><span>01</span><i></i><span>INTRO</span></div>
+        <p class="eyebrow">AI / DATA SCIENCE / APPLIED SYSTEMS</p>
+        <h1>Making data<br><em>think clearly.</em></h1>
+        <p class="hero-summary">I’m Yaswanth Kalyan (Yash) — an AI and Data Science professional who turns messy data, research questions, and operational problems into intelligent systems people can actually use.</p>
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#work">Explore the work <span>↗</span></a>
+          <a class="button button-line magnetic" href="https://www.linkedin.com/in/yaswanth-kalyan-ponugoti-60439216a/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
         </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2024(Jan)-2024(Dec)</span>
-						<h2>Research Assistant</h2>
-						<span class="position">Purdue University,</span>
-						<span class="mt-3">US</span>
-						<p class="mt-4"> 
-							<ul>
-								
-								<li>Developed and applied novel biostatistical models to analyze large-scale genomic and biomedical datasets, aiming to uncover genetic variants associated with diabetes and cardiometabolic diseases.
-								<li>Designed computational pipelines integrating GWAS, eQTL, and multi-omics data to identify biological mechanisms driving disease heterogeneity.</li>
-								<li>Focused on genetic diversity and underrepresented populations, ensuring findings are inclusive and relevant across ancestries to support equitable precision medicine.</li>
-								<li>Collaborated cross-functionally with geneticists, clinicians, and data scientists to translate complex genetic insights into actionable biomedical knowledge.	</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2021(Aug)-2023(Aug)</span>
-						<h2>Analytics Engineer/ AI ML Engineer</h2>
-						<span class="position">Schlumberger,</span>
-						<span class="mt-3">INDIA</span>
-						<p class="mt-4">Schlumberger is a leading global technology company providing services to the oil and gas industry, known for its innovations in energy exploration and production. 
-							<ul>
-								<li>Achieved $2M savings in logistics planning with POC and MVP dashboards using Google Studio and Google Cloud Platform.</li>
-								<li>Saved $1M in finance processes by creating a dashboard to identify and rectify outliers in Global SAP data for MAT Price Correction..</li>
-								<li>Improved decision-making and HSE protocols by 30% through AI/ML solutions for rig site use cases.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2020(Jan)-2021(Jun)</span>
-						<h2>Python Application Developer</h2>
-						<span class="position">Shiash Info Solutions</span>
-						<p class="mt-4">Shiash Info Solutions is a dynamic firm specializing in software development and solutions, leveraging innovative technologies to streamline business processes. 
-							<ul>
-								<li>Collaborated with senior developers, gaining practical Python application development experience and honing problem-solving skills.</li>
-								<li>Developed applications focusing on Python and contributed to real-world projects.</li>
-								<li>Built a recommendation system for farmers based the weed percentage to get good yeild and reduce the cost.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018(Dec)-2019(Nov)</span>
-						<h2>Data Science Intern</h2>
-						<span class="position">Agrometrics Analytics and Services</span>
-						<p class="mt-4">Agrometrics Analytics & Services is a leading provider of agricultural analytics solutions, pioneering advancements in crop analysis and resource management.
-							<ul>
-								<li>At Agrometrics Analytics & Services, I implemented U-Net and YOLO architectures, achieving 90% accuracy in crop analysis and resource management solutions using advanced machine learning techniques.</li>
-								
-								<li>Contributed to Agrometrics Analytics & Services by developing and deploying machine learning models, significantly improving crop analysis accuracy and resource management efficiency.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2024</span>
-    					<h2>Master of Science</h2>
-    					<span class="position">Purdue University</span>
-    					<p class="mt-4">Dean Scholar Recipient</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2021</span>
-    					<h2>Bachelor of Technology</h2>
-    					<span class="position">Vellore Institute of Technology (VIT)</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1cyafNxF5r_kKNsEdoSabCeIgqRJREkK4/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics &amp; Data Science projects on SQL, Python, ML/DL &amp; NLP.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/yaswanthkalyan/Sarcasam_Genration/tree/main" class="block-20 zoom-effect" style="background-image: url('images/sarcasm.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/yaswanthkalyan/Sarcasam_Genration/tree/main">Sarcam Generation using COMET Distil</a></h3>
-                <p>The Sarcasm Generation project integrates sentiment analysis and commonsense reasoning to optimize sarcastic sentence generation in natural language processing systems.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/yaswanthkalyan/Metaphore_Detection" class="block-20 zoom-effect" style="background-image: url('images/metaphore.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/yaswanthkalyan/Metaphore_Detection">Metaphore Detection using Distil BERT in NLP</a></h3>
-                <p>Automated metaphor detection using DistilBERT for natural language understanding tasks.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/yaswanthkalyan/Metaphore_Detection" class="block-20 zoom-effect" style="background-image: url('images/crop.jpeg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/yaswanthkalyan/Metaphore_Detection">Crop row detection using Computer Vision</a></h3>
-                <p>Implementing crop row detection with a custom LinkNet architecture utilizing 5 convolutional layers for encoding and 4 deconvolutional layers for decoding, seeking feedback for optimization.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/yaswanthkalyan/Stock-Price-Behavior" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/yaswanthkalyan/Stock-Price-Behavior">Portfolio Profit Forecast- Time Series Forecasting using Bayesian</a></h3>
-				  <p>Exploring stock price prediction with Bayesian methods and MCMC simulations using the Yahoo Finance dataset (yfinance).</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/yaswanthkalyan/Credit-Card-Customer-Segmentation" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/yaswanthkalyan/Credit-Card-Customer-Segmentation">Credit-Card-Customer-Segmentation</a></h3>
-				  <p>Using data mining and clustering algorithms to categorize credit card customers for personalized marketing and risk assessment, leveraging the Customer Credit Card dataset from Kaggle.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Certifications</span>
-              </div>
-            </div>
-          </div>
+        <div class="hero-proof">
+          <div><strong>5<span>+</span></strong><small>years building<br>with data</small></div>
+          <div><strong>$3<span>M</span></strong><small>documented<br>business impact</small></div>
+          <div><strong>90<span>%</span></strong><small>vision model<br>accuracy</small></div>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> Passionate about solving business problems &amp; uncovering hidden data stories through machine learning and data science methodologies.</h4>
-						<br>
-						<p><a href="https://github.com/yaswanthkalyan" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
 
+      <figure class="hero-image-card">
+        <img src="images/ai-hero.png" alt="Yaswanth Kalyan (Yash) surrounded by AI and data visualizations">
+        <figcaption><span>HUMAN × AI</span><strong>Building intelligence for a better tomorrow.</strong></figcaption>
+      </figure>
 
+      <div class="neural-lab tilt-card" data-tilt-strength="8">
+        <div class="lab-topline"><span>LIVE SYSTEM MAP</span><span>YK / 001</span></div>
+        <div class="lab-canvas-wrap">
+          <canvas id="system-map" aria-label="Animated AI system network visualization"></canvas>
+          <div class="map-grid"></div>
+          <button class="map-node node-data" type="button" data-node="data" aria-label="Inspect data layer"><b>DATA</b><small>signals in</small><strong>80% <em>automated</em></strong></button>
+          <button class="map-node node-research" type="button" data-node="research" aria-label="Inspect research layer"><b>RESEARCH</b><small>evidence</small><strong>25% <em>less bias</em></strong></button>
+          <button class="map-node node-model" type="button" data-node="model" aria-label="Inspect model layer"><b>MODEL</b><small>reasoning</small><strong>10–15% <em>less downtime</em></strong></button>
+          <button class="map-node node-agent" type="button" data-node="agent" aria-label="Inspect agentic AI layer"><b>AGENTIC AI</b><small>actions out</small><strong>50% <em>faster analysis</em></strong></button>
+          <button class="map-node node-vision" type="button" data-node="vision" aria-label="Inspect computer vision layer"><b>VISION</b><small>perception</small><strong>97% <em>leaf accuracy</em></strong></button>
+          <button class="map-node node-bayesian" type="button" data-node="bayesian" aria-label="Inspect Bayesian decision layer"><b>BAYESIAN</b><small>uncertainty</small><strong>2 <em>decision systems</em></strong></button>
+          <button class="map-node node-impact" type="button" data-node="impact" aria-label="Inspect impact layer"><b>IMPACT</b><small>value out</small><strong>$2M+ <em>annualized</em></strong></button>
+          <div class="map-core" data-node="core" role="button" tabindex="0" aria-label="Inspect AI and data science core"><img src="images/yk-logo.png" alt=""><small>AI / DS</small></div>
+        </div>
+        <div class="lab-readout"><span class="readout-state"><i class="readout-dot"></i><strong id="graph-status">systems thinking</strong></span><span id="graph-metric">08 nodes / 11 edges / active core</span></div>
+        <div class="graph-inspector" aria-live="polite">
+          <div class="inspector-copy">
+            <small id="graph-kicker">SELECTED LAYER / CORE</small>
+            <strong id="graph-title">AI / DATA SCIENCE SYSTEM</strong>
+            <p id="graph-description">Select a node to understand what it does, how it is built, and the contribution it makes.</p>
+            <div class="graph-facts">
+              <div><small>CONTRIBUTION</small><strong id="graph-contribution">Connects signal to decision.</strong></div>
+              <div><small>METHOD / STACK</small><strong id="graph-stack">ML · GenAI · statistics · data engineering</strong></div>
+            </div>
+          </div>
+          <div class="inspector-value"><strong id="graph-value">6<span>+</span></strong><small id="graph-measure">production + research systems</small></div>
+        </div>
+        <div class="lab-side-label">BUILDING<br>USEFUL<br>INTELLIGENCE</div>
+      </div>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+      <div class="scroll-hint"><span></span> Scroll to enter the system</div>
+    </section>
+
+    <div class="signal-ticker" aria-label="Areas of expertise">
+      <div class="ticker-track"><span>PYTHON</span><b>✦</b><span>MACHINE LEARNING</span><b>✦</b><span>NLP / GENAI</span><b>✦</b><span>COMPUTER VISION</span><b>✦</b><span>SQL / CLOUD</span><b>✦</b><span>ANALYTICS ENGINEERING</span><b>✦</b><span>PYTHON</span><b>✦</b><span>MACHINE LEARNING</span><b>✦</b><span>NLP / GENAI</span><b>✦</b></div>
+    </div>
+
+    <section class="section-frame identity-section" id="about">
+      <div class="section-heading">
+        <div class="section-index"><span>02</span><i></i><span>PROFILE</span></div>
+        <p class="eyebrow">THE SHORT VERSION</p>
+        <h2>I work where<br><em>research meets reality.</em></h2>
+      </div>
+      <div class="identity-layout">
+        <div class="identity-copy">
+          <p class="lead-copy">The best data products are not just accurate. They are understandable, dependable, and connected to a decision that matters.</p>
+          <p>I bring together statistical thinking, machine learning, software engineering, and visual storytelling to build systems that move from experiment to action. My work spans large-scale biomedical research, industrial analytics, NLP, computer vision, and GenAI.</p>
+          <div class="principles">
+            <div><span>01</span><strong>Make it useful</strong><small>Models should change a decision, not just win a metric.</small></div>
+            <div><span>02</span><strong>Make it legible</strong><small>Clear systems earn trust from technical and business teams.</small></div>
+            <div><span>03</span><strong>Make it ship</strong><small>Good ideas matter most when they survive contact with reality.</small></div>
           </div>
         </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>United States</p>
-	          </div>
+        <aside class="identity-panel glass-panel">
+          <div class="portrait-frame"><img src="images/portrait-professional.png" alt="Professional portrait of Yaswanth Kalyan (Yash)"><span class="portrait-index">YK / AI + DS</span></div>
+          <div class="identity-facts">
+          <div><small>NOW</small><strong>Tyson Foods</strong><span>AI / Data / Analytics · Springdale, AR</span></div>
+            <div><small>EDUCATION</small><strong>MS Data Science</strong><span>Purdue University · 2024</span></div>
+            <div><small>ORIGIN</small><strong>Computer Science</strong><span>Vellore Institute of Technology</span></div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 1 978 793 7434</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">yaswanthkalyan7@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1cyafNxF5r_kKNsEdoSabCeIgqRJREkK4/view?usp=drive_link">resumelink</a></p>
-	          </div>
-          </div>
+        </aside>
+      </div>
+    </section>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-				
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/yaswanth-kalyan-ponugoti-60439216a/"><span class="icon-linkedin"></span></a></li>  
-					
-					  
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+    <section class="section-frame experience-section" id="experience">
+      <div class="section-heading split-heading">
+        <div><div class="section-index"><span>03</span><i></i><span>EXPERIENCE</span></div><p class="eyebrow">FROM MODELS TO MEASURABLE OUTCOMES</p><h2>A career built<br>around <em>signal.</em></h2></div>
+        <p class="heading-note">Research depth. Production discipline. Business context. The throughline is using data to make complex systems work better.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item current tilt-card" data-tilt-strength="3">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-meta"><span class="timeline-status">JUN 2025 — PRESENT</span><span>SPRINGDALE, AR</span></div>
+          <div class="timeline-body"><h3>Sr Machine Learning Engineer</h3><h4>Tyson Foods</h4><p>Building production-grade AI systems that turn high-volume operational signals into faster decisions and measurable value.</p><ul><li>Architected ML data and feature pipelines with contracts, validation, and versioning for large-scale event data.</li><li>Built equipment-optimization recommendations that reduced unplanned downtime by approximately 10–15%.</li><li>Delivered secure LLM agents for schema reasoning and SQL analysis, cutting analysis turnaround by about 50%.</li><li>Automated analytics and reporting workflows, eliminating roughly 80% of manual effort and creating $2M+ annualized value.</li></ul></div>
+          <div class="timeline-year">NOW</div>
+        </article>
+        <article class="timeline-item tilt-card" data-tilt-strength="3">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-meta"><span>MAR 2025 — JUN 2025</span><span>SANTA CLARA, CA</span></div>
+          <div class="timeline-body"><h3>AI Engineer</h3><h4>Global Apps</h4><p>Applied generative AI and cloud-native machine learning to marketing automation and campaign intelligence.</p><ul><li>Built end-to-end ML workflows for campaign optimization and audience targeting.</li><li>Developed LLM-powered content generation and personalization experiences.</li><li>Partnered across product and engineering to move AI concepts toward launch-ready systems.</li></ul></div>
+          <div class="timeline-year">2025</div>
+        </article>
+        <article class="timeline-item tilt-card" data-tilt-strength="3">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-meta"><span>AUG 2024 — DEC 2024</span><span>INDIANA, US</span></div>
+          <div class="timeline-body"><h3>Healthcare Research Assistant</h3><h4>Purdue University</h4><p>Applied Bayesian modeling, machine learning, and computational genomics to large-scale biomedical research.</p><ul><li>Studied genetic heterogeneity in diabetes and cardiometabolic disease, with attention to underrepresented populations.</li><li>Built reproducible genomics pipelines and reduced cohort bias by approximately 25%.</li><li>Streamlined research workflows, reducing analysis turnaround by approximately 40%.</li></ul></div>
+          <div class="timeline-year">2024</div>
+        </article>
+        <article class="timeline-item tilt-card" data-tilt-strength="3">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-meta"><span>JUL 2021 — JAN 2023</span><span>INDIA</span></div>
+          <div class="timeline-body"><h3>Data Scientist / Sr Data Scientist</h3><h4>Schlumberger</h4><p>Built analytics products and applied AI/ML solutions for energy operations, finance, logistics, and safety.</p><ul><li>Delivered logistics intelligence dashboards associated with $800K in savings.</li><li>Created SAP/MAT price-correction analytics that supported $1M in process savings.</li><li>Improved HSE decision-making by 30% through notifier, gauge-reading, and applied AI/ML solutions.</li></ul></div>
+          <div class="timeline-year">2021</div>
+        </article>
+        <article class="timeline-item tilt-card" data-tilt-strength="3">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-meta"><span>JUL 2020 — JUN 2021</span><span>CHENNAI, INDIA</span></div>
+          <div class="timeline-body"><h3>ML Engineer Intern</h3><h4>Shiash Info Solutions</h4><p>Developed practical machine learning applications for agriculture and recommendation workflows.</p><ul><li>Built crop-disease classification and fertilizer-recommendation workflows for agricultural decision support.</li><li>Prototyped a FastAPI-based yield and fertilizer application with an eye toward production and e-commerce use cases.</li></ul></div>
+          <div class="timeline-year">2020</div>
+        </article>
+        <article class="timeline-item tilt-card" data-tilt-strength="3">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-meta"><span>MAY 2019 — DEC 2019</span><span>HYDERABAD, INDIA</span></div>
+          <div class="timeline-body"><h3>Data Science Engineer Intern</h3><h4>Agrometrics Analytics &amp; Services</h4><p>Applied deep learning and computer vision to agricultural imagery and yield intelligence.</p><ul><li>Implemented U-Net and YOLO-based workflows, reaching approximately 90% accuracy in crop analysis tasks.</li><li>Built preprocessing pipelines for large agricultural datasets to make model training more reliable and repeatable.</li></ul></div>
+          <div class="timeline-year">2019</div>
+        </article>
+      </div>
+    </section>
 
+    <section class="section-frame work-section" id="work">
+      <div class="section-heading split-heading">
+        <div><div class="section-index"><span>04</span><i></i><span>SELECTED WORK</span></div><p class="eyebrow">PROBLEMS I LIKE TO SOLVE</p><h2>Proof of work,<br><em>not just a list.</em></h2></div>
+        <p class="heading-note">A selection of systems across language, vision, forecasting, segmentation, and operational intelligence.</p>
+      </div>
+      <div class="work-controls"><div class="filter-group" role="tablist" aria-label="Filter selected work"><button class="filter-chip is-active" type="button" data-filter="all" aria-selected="true">All</button><button class="filter-chip" type="button" data-filter="ai">AI / ML</button><button class="filter-chip" type="button" data-filter="nlp">NLP / GenAI</button><button class="filter-chip" type="button" data-filter="vision">Vision</button><button class="filter-chip" type="button" data-filter="analytics">Analytics</button></div><a class="text-link" href="https://github.com/yaswanthkalyan" target="_blank" rel="noreferrer">Open GitHub <span>↗</span></a></div>
+      <div class="work-grid">
+        <article class="work-card work-feature tilt-card" data-category="analytics ai" data-tilt-strength="4"><div class="work-visual visual-logistics"><span class="visual-label">OPERATIONAL INTELLIGENCE</span><div class="chart-bars"><i style="height:38%"></i><i style="height:56%"></i><i style="height:47%"></i><i style="height:74%"></i><i style="height:68%"></i><i style="height:92%"></i><i style="height:82%"></i></div><strong>$2M <small>impact signal</small></strong></div><div class="work-copy"><div class="work-top"><span>01 / ANALYTICS + CLOUD</span><span>IMPACT</span></div><h3>Logistics Intelligence</h3><p>POC and MVP dashboards that translated operational data into planning insights and documented savings.</p><div class="tag-row"><span>Python</span><span>GCP</span><span>Looker Studio</span></div></div></article>
+        <article class="work-card tilt-card" data-category="analytics" data-tilt-strength="4"><div class="work-visual visual-finance"><span class="visual-label">SAP DATA SIGNAL</span><div class="signal-line"></div><div class="signal-line second"></div><strong>$1M <small>process value</small></strong></div><div class="work-copy"><div class="work-top"><span>02 / DATA QUALITY</span><span>FINANCE</span></div><h3>MAT Price Correction</h3><p>Outlier analytics across global SAP data to surface and correct high-value process exceptions.</p><div class="tag-row"><span>SQL</span><span>SAP</span><span>Dashboarding</span></div></div></article>
+        <article class="work-card tilt-card" data-category="nlp ai" data-tilt-strength="4"><div class="work-visual visual-language"><span class="glyph glyph-one">Aa</span><span class="glyph glyph-two">∑</span><span class="glyph glyph-three">?!</span><div class="language-core">NLP</div></div><div class="work-copy"><div class="work-top"><span>03 / NLP + GENAI</span><span>GITHUB</span></div><h3>Sarcasm Generation</h3><p>Commonsense reasoning and sentiment signals for controlled sarcastic sentence generation.</p><div class="tag-row"><span>COMET</span><span>Distil</span><span>NLP</span></div><a class="card-link" href="https://github.com/yaswanthkalyan/Sarcasam_Genration/tree/main" target="_blank" rel="noreferrer">View repository ↗</a></div></article>
+        <article class="work-card tilt-card" data-category="nlp ai" data-tilt-strength="4"><div class="work-visual visual-transformer"><div class="transformer-blocks"><i></i><i></i><i></i><i></i><i></i></div><div class="language-core">BERT</div></div><div class="work-copy"><div class="work-top"><span>04 / NLP + TRANSFORMERS</span><span>GITHUB</span></div><h3>Metaphor Detection</h3><p>DistilBERT-based NLU system for detecting metaphorical language, reaching a 0.045 loss in evaluation.</p><div class="tag-row"><span>DistilBERT</span><span>NLU</span><span>0.045 loss</span></div><a class="card-link" href="https://github.com/yaswanthkalyan/Metaphore_Detection" target="_blank" rel="noreferrer">View repository ↗</a></div></article>
+        <article class="work-card tilt-card" data-category="vision ai" data-tilt-strength="4"><div class="work-visual visual-vision"><div class="vision-frame"><span></span><span></span><span></span><span></span></div><div class="vision-scan"></div><div class="language-core">CV</div></div><div class="work-copy"><div class="work-top"><span>05 / COMPUTER VISION</span><span>AGRI AI</span></div><h3>Crop + Leaf Segmentation</h3><p>U-Net workflows for crop-row and leaf segmentation, reaching 85% crop-row accuracy and 97% leaf segmentation accuracy.</p><div class="tag-row"><span>U-Net</span><span>YOLO</span><span>85% / 97%</span></div></div></article>
+        <article class="work-card tilt-card" data-category="analytics ai" data-tilt-strength="4"><div class="work-visual visual-forecast"><div class="forecast-line"></div><div class="forecast-dot"></div><span class="forecast-axis">MCMC →</span></div><div class="work-copy"><div class="work-top"><span>06 / BAYESIAN STATS</span><span>PORTFOLIO</span></div><h3>Bayesian Portfolio Optimization</h3><p>Used MCMC and simulated prices to reason about uncertainty, manage investment risk, and construct an optimal portfolio.</p><div class="tag-row"><span>Bayesian</span><span>MCMC</span><span>Simulation</span></div><a class="card-link" href="https://github.com/yaswanthkalyan/Stock-Price-Behavior" target="_blank" rel="noreferrer">View repository ↗</a></div></article>
+        <article class="work-card tilt-card" data-category="nlp ai" data-tilt-strength="4"><div class="work-visual visual-language"><span class="glyph glyph-one">YT</span><span class="glyph glyph-two">Q&amp;A</span><span class="glyph glyph-three">↗</span><div class="language-core">AGENT</div></div><div class="work-copy"><div class="work-top"><span>07 / AGENTIC AI</span><span>LLM SYSTEM</span></div><h3>YouTube Summarizing Agent</h3><p>Built an agent that summarizes YouTube videos and supports interactive Q&amp;A using Gemini, LangChain, and Groq’s LLaMA 3.3-70B.</p><div class="tag-row"><span>Gemini</span><span>LangChain</span><span>LLaMA 3.3</span></div></div></article>
+        <article class="work-card tilt-card" data-category="nlp ai" data-tilt-strength="4"><div class="work-visual visual-transformer"><div class="transformer-blocks"><i></i><i></i><i></i><i></i><i></i></div><div class="language-core">RAG</div></div><div class="work-copy"><div class="work-top"><span>08 / GENAI + RAG</span><span>70% FASTER</span></div><h3>LinkedIn Blog Generator</h3><p>Streamlit-based LLM workflow for generating posts across 10+ topics and languages, improving content generation speed by 70%.</p><div class="tag-row"><span>Streamlit</span><span>RAG</span><span>LLM</span></div></div></article>
+        <article class="work-card tilt-card" data-category="nlp ai" data-tilt-strength="4"><div class="work-visual visual-language"><span class="glyph glyph-one">CV</span><span class="glyph glyph-two">→</span><span class="glyph glyph-three">JD</span><div class="language-core">MATCH</div></div><div class="work-copy"><div class="work-top"><span>09 / NLP + RAG</span><span>CAREER AI</span></div><h3>Cover Letter Generator</h3><p>Personalized outreach tool that maps a person’s skills to a job description and generates a role-specific cover letter.</p><div class="tag-row"><span>Python</span><span>NLP</span><span>Personalization</span></div></div></article>
+        <article class="work-card tilt-card" data-category="analytics ai" data-tilt-strength="4"><div class="work-visual visual-forecast"><div class="forecast-line"></div><div class="forecast-dot"></div><span class="forecast-axis">A/B →</span></div><div class="work-copy"><div class="work-top"><span>10 / EXPERIMENTATION</span><span>DECISION SCIENCE</span></div><h3>Bayesian Ad Conversion Testing</h3><p>Designed Bayesian thinking for A/B tests to quantify uncertainty, compare ad strategies, and support better conversion decisions.</p><div class="tag-row"><span>Bayesian</span><span>A/B Testing</span><span>Predictive Analytics</span></div></div></article>
+        <article class="work-card tilt-card" data-category="analytics ai" data-tilt-strength="4"><div class="work-visual visual-finance"><span class="visual-label">RISK SIGNAL</span><div class="signal-line"></div><div class="signal-line second"></div><strong>RISK <small>estimated</small></strong></div><div class="work-copy"><div class="work-top"><span>11 / DATA MINING</span><span>RISK AI</span></div><h3>Credit Card Risk Estimation</h3><p>Modeled historical consumer records to estimate fraud risk and identify patterns in customer behavior over time.</p><div class="tag-row"><span>Data Mining</span><span>Fraud Risk</span><span>Classification</span></div></div></article>
+        <article class="work-card tilt-card" data-category="vision ai" data-tilt-strength="4"><div class="work-visual visual-vision"><div class="vision-frame"><span></span><span></span><span></span><span></span></div><div class="vision-scan"></div><div class="language-core">RFID</div></div><div class="work-copy"><div class="work-top"><span>12 / COMPUTER VISION</span><span>SECURITY</span></div><h3>Face Recognition Security</h3><p>Multi-level security system combining face recognition with RFID authentication for tighter access control.</p><div class="tag-row"><span>Face Recognition</span><span>RFID</span><span>Security</span></div></div></article>
+      </div>
+    </section>
 
- 
-	
-    
+    <section class="section-frame toolkit-section" id="toolkit">
+      <div class="section-heading"><div class="section-index"><span>05</span><i></i><span>TOOLKIT</span></div><p class="eyebrow">THE SYSTEMS BEHIND THE SYSTEMS</p><h2>A stack for turning<br><em>questions into clarity.</em></h2></div>
+      <div class="toolkit-grid">
+        <div class="toolkit-card toolkit-primary"><span class="toolkit-number">01</span><h3>Model intelligence</h3><p>Machine learning, deep learning, NLP, GenAI, computer vision, statistical modeling, and experimental design.</p><div class="skill-cloud"><span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>Transformers</span><span>OpenCV</span></div></div>
+        <div class="toolkit-card"><span class="toolkit-number">02</span><h3>Data foundations</h3><p>From raw sources to analytical products: query, transform, validate, visualize, and communicate.</p><div class="skill-cloud"><span>SQL</span><span>PySpark</span><span>GCP</span><span>SAP</span><span>Power BI</span><span>Tableau</span></div></div>
+        <div class="toolkit-card"><span class="toolkit-number">03</span><h3>Working style</h3><p>Curious enough to ask better questions. Rigorous enough to test assumptions. Practical enough to ship.</p><div class="working-signal"><i></i><span>research</span><b>→</b><span>build</span><b>→</b><span>impact</span></div></div>
+      </div>
+    </section>
 
+    <section class="contact-section section-frame" id="contact">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="section-index"><span>06</span><i></i><span>CONTACT</span></div>
+      <p class="eyebrow">HAVE A HARD PROBLEM?</p>
+      <h2>Let’s build something<br><em>worth explaining.</em></h2>
+      <p class="contact-copy">Open to conversations around AI, data products, applied machine learning, research, and teams trying to make better decisions with data.</p>
+      <div class="contact-actions"><a class="button button-primary magnetic" href="mailto:yaswanthkalyan7@gmail.com">Start a conversation <span>↗</span></a><a class="button button-line magnetic" href="https://drive.google.com/file/d/1cyafNxF5r_kKNsEdoSabCeIgqRJREkK4/view?usp=drive_link" target="_blank" rel="noreferrer">View resume <span>↗</span></a></div>
+      <div class="contact-links"><a href="mailto:yaswanthkalyan7@gmail.com">yaswanthkalyan7@gmail.com</a><a href="https://www.linkedin.com/in/yaswanth-kalyan-ponugoti-60439216a/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/yaswanthkalyan" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </section>
+  </main>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+  <footer class="site-footer"><span>YK / AI + DATA SCIENCE</span><span>Designed to make the signal visible.</span><span>© <span id="year"></span> Yaswanth Kalyan (Yash)</span></footer>
+  <script src="js/liquid-ui.js"></script>
+</body>
 </html>

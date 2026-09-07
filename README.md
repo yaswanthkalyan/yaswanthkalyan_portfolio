@@ -1,57 +1,40 @@
-# Yaswanth Kalyan Ponugoti - Portfolio Website
+# Yaswanth Kalyan Ponugoti (Yash) — Portfolio
 
-## Overview
-This repository contains the source code for my personal portfolio website. The website showcases my experience, skills, projects, and contact information in an interactive and visually appealing manner.
+An interactive, responsive portfolio for AI, machine learning, data science, analytics engineering, NLP/GenAI, computer vision, and Bayesian decision systems.
 
-## Features
-- **Responsive Design**: Works across all devices (desktop, tablet, and mobile).
-- **Animated Typing Effect**: Displays different roles dynamically.
-- **Smooth Scrolling Navigation**: Easy access to different sections.
-- **Project Showcase**: Highlights my key projects with images and links.
-- **Downloadable Resume**: Direct access to my latest CV.
-- **Contact Information**: Email, LinkedIn, and phone details for easy communication.
+## What is included
 
-## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Animation & UI Enhancements**:
-  - jQuery for dynamic effects
-  - AOS (Animate On Scroll) for smooth animations
-  - Owl Carousel for interactive sliders
-  - Magnific Popup for media display
-- **Icons & Fonts**: Google Fonts, Ionicons, Flaticon
+- Interactive animated background and Live System Map
+- Clickable graph nodes with contribution, method, stack, and impact details
+- Responsive hero, experience timeline, selected work, toolkit, and contact sections
+- Filterable project cards for AI/ML, NLP/GenAI, computer vision, and analytics
+- Accessible keyboard interactions and reduced-motion support
+- No build step and no third-party JavaScript dependencies
 
-## How to Use
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yaswanthkalyan/portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd portfolio
-   ```
-3. Open `index.html` in a browser to view the site.
+## Run locally
 
-## Live Demo
-You can view the live version of the website [here](https://yaswanthkalyan.github.io/yaswanthkalyan_portfolio/).
+From the repository root, start any static server:
 
-## Folder Structure
+```sh
+python3 -m http.server 8000
 ```
+
+Then open <http://localhost:8000>.
+
+## Structure
+
+```text
 portfolio/
-├── css/                 # Stylesheets
-├── images/              # Images and assets
-├── js/                  # JavaScript files
-├── index.html           # Main HTML file
-├── README.md            # Documentation
+├── css/liquid-ui.css       # All site styling and responsive rules
+├── images/                 # Active portfolio artwork and logo assets
+├── js/liquid-ui.js         # Canvas visuals and UI interactions
+├── index.html              # Portfolio page
+└── README.md
 ```
 
-## Contact
-For any inquiries, feel free to connect with me:
-- **Email**: yaswanthkalyan7@gmail.com
-- **LinkedIn**: [Yaswanth Kalyan Ponugoti](https://www.linkedin.com/in/yaswanth-kalyan-ponugoti-60439216a/)
-- **GitHub**: [yaswanthkalyan](https://github.com/yaswanthkalyan)
+## Links
 
-## License
-This project is open-source and available under the [MIT License](LICENSE). Feel free to use and modify it for your own portfolio.
-
----
-
+- Email: yaswanthkalyan7@gmail.com
+- LinkedIn: <https://www.linkedin.com/in/yaswanth-kalyan-ponugoti-60439216a/>
+- GitHub: <https://github.com/yaswanthkalyan>
+- Live site: <https://yaswanthkalyan.github.io/yaswanthkalyan_portfolio/>
